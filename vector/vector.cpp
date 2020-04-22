@@ -1,5 +1,8 @@
 #include "vector.h"
+<<<<<<< HEAD
 #include<cstdlib>
+=======
+>>>>>>> b5ab9757d16d827e8a3921f76aa2bb3f7fabcf52
 
 template <typename T>
 void Vector<T>::copyFrom(T const* A,Rank lo,Rank hi){
@@ -48,6 +51,7 @@ template <typename T>
 T& Vector<T>::operator[](Rank r){
 	return _elem[r];
 }
+<<<<<<< HEAD
 
 template <typename T>
 Rank Vector<T>::insert(Rank r,T const & e){
@@ -131,3 +135,5 @@ Rank Vector<T>::search(T const& e,Rank lo,Rank hi) const{
 
 
 
+=======
+>>>>>>> b5ab9757d16d827e8a3921f76aa2bb3f7fabcf52
