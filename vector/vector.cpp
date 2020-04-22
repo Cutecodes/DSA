@@ -1,7 +1,6 @@
 #include "vector.h"
 #include<cstdlib>
 
-
 template <typename T>
 void Vector<T>::copyFrom(T const* A,Rank lo,Rank hi){
 	_elem = new T[_capacity = 2 * (hi - lo)];
@@ -49,7 +48,6 @@ template <typename T>
 T& Vector<T>::operator[](Rank r){
 	return _elem[r];
 }
-
 
 template <typename T>
 Rank Vector<T>::insert(Rank r,T const & e){
@@ -130,7 +128,4 @@ template <typename T>
 Rank Vector<T>::search(T const& e,Rank lo,Rank hi) const{
 	return (rand()%2)?binSearch(_elem,e,lo,hi):fibSearch(_elem,e,lo,hi);
 }
-
-
-
 
